@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sergey Savchuk — Portfolio</title>
+<link rel="icon" href="favicon.ico" sizes="32x32">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<base target="_blank">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f5f7fa; color: #1f2933; font: 15px/1.55 "Inter", "Helvetica Neue", Arial, sans-serif; }
+  .wrap { max-width: 1100px; margin: 0 auto; padding: 36px 24px 60px; }
+  header h1 { font-size: 2rem; margin: 0; letter-spacing: -0.3px; }
+  header .title { color: #3d5a80; font-weight: 600; font-size: 1.1rem; margin: 2px 0 10px; }
+  header .contacts a { margin-right: 16px; }
+  a { color: #0a66c2; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  h2 { font-size: .85rem; text-transform: uppercase; letter-spacing: 1.4px; color: #3d5a80; margin: 40px 0 4px;
+        padding-bottom: 4px; border-bottom: 1.5px solid #3d5a80; }
+  .sub { margin: 6px 0 10px; color: #52606d; }
+  .tech { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 16px; }
+  .tech span { background: #e4ebf3; color: #243b53; border-radius: 12px; padding: 2px 10px; font-size: .82rem; }
+  .apps { display: grid; grid-template-columns: repeat(auto-fill, minmax(500px, 1fr)); gap: 20px; }
+  .app { background: #fff; border-radius: 12px; padding: 18px; box-shadow: 0 1px 4px rgba(0,0,0,.08); min-width: 0; }
+  .app-head { display: flex; gap: 14px; align-items: center; }
+  .icon { width: 56px; height: 56px; border-radius: 13px; box-shadow: 0 0 0 1px rgba(0,0,0,.06); }
+  .badge { display: flex; align-items: center; justify-content: center; background: #3d5a80; color: #fff;
+            font-weight: 700; font-size: 1.5rem; }
+  .app h3 { margin: 0; font-size: 1.1rem; }
+  .note { color: #616e7c; font-size: .85rem; }
+  .links { margin-top: 2px; }
+  .store { font-size: .85rem; margin-right: 12px; }
+  .app p { margin: 10px 0 12px; }
+  .shots { display: flex; gap: 10px; overflow-x: auto; padding-bottom: 6px; }
+  .shots img { height: 300px; border-radius: 8px; box-shadow: 0 0 0 1px rgba(0,0,0,.08); display: block; }
+  .oss { padding-left: 18px; }
+  .oss li { margin-bottom: 10px; }
+  .prs { font-size: .9rem; color: #52606d; }
+  @media (max-width: 560px) { .apps { grid-template-columns: 1fr; } .shots img { height: 240px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>Sergey Savchuk</h1>
+  <div class="title">Senior Flutter Developer · AI-Native — portfolio</div>
+  <div class="contacts">
+    <a href="cv.pdf">CV (PDF)</a><a href="mailto:sleepingdog.dev@gmail.com" target="_self">sleepingdog.dev@gmail.com</a><a
+    href="https://t.me/e1d2c">Telegram @e1d2c</a><a href="https://github.com/sergsavchuk">GitHub</a><a
+    href="https://www.linkedin.com/in/sergey-savchuk-350bb7252/">LinkedIn</a>
+  </div>
+</header>
+
+<section>
+  <h2>Smart buildings — EVO electronics · 2024 – present</h2>
+  <p class="sub">Lead developer of a family of Flutter apps built on one shared feature library and released as several brands. Since 2026 delivered with an AI-native workflow (Claude Code, Codex).</p>
+  <div class="tech"><span>Flutter</span><span>Shared feature library (melos)</span><span>Flavors / white-label</span><span>BLoC</span><span>SIP · WebRTC · CallKit</span><span>Native Swift & Kotlin plugins</span><span>WebSockets</span><span>Payments</span><span>Push</span><span>Feature flags</span><span>PostHog</span><span>Codemagic · Shorebird</span></div>
+<div class="apps">
+  <article class="app">
+    <div class="app-head">
+      <img class="icon" src="img/nwhome-0icon.png" alt="">
+      <div><h3>NW Home</h3><div class="links"><a class="store" href="https://apps.apple.com/us/app/id6479891671">App Store</a><a class="store" href="https://play.google.com/store/apps/details?id=by.mcnw.appt">Google Play</a></div></div>
+    </div>
+    <p>Resident app for the North Waterfront residential complex in Minsk: payments, access control to the territory, CCTV, news and voting, energy consumption, loyalty program; family, guests and tenants.</p>
+    <div class="shots"><a href="img/nwhome-1.jpg"><img src="img/nwhome-1.jpg" alt="NW Home screenshot" loading="lazy"></a><a href="img/nwhome-2.jpg"><img src="img/nwhome-2.jpg" alt="NW Home screenshot" loading="lazy"></a><a href="img/nwhome-3.jpg"><img src="img/nwhome-3.jpg" alt="NW Home screenshot" loading="lazy"></a><a href="img/nwhome-4.jpg"><img src="img/nwhome-4.jpg" alt="NW Home screenshot" loading="lazy"></a><a href="img/nwhome-5.jpg"><img src="img/nwhome-5.jpg" alt="NW Home screenshot" loading="lazy"></a></div>
+  </article>
+  <article class="app">
+    <div class="app-head">
+      <img class="icon" src="img/hellohome-0icon.png" alt="">
+      <div><h3>Hello Home Dana</h3><div class="links"><a class="store" href="https://apps.apple.com/us/app/id6761252955">App Store</a><a class="store" href="https://play.google.com/store/apps/details?id=com.cityos.hellohome">Google Play</a></div></div>
+    </div>
+    <p>Resident app for modern residential communities: profile and payments, service requests to property management with real-time updates, amenities booking, community.</p>
+    <div class="shots"><a href="img/hellohome-1.jpg"><img src="img/hellohome-1.jpg" alt="Hello Home Dana screenshot" loading="lazy"></a><a href="img/hellohome-2.jpg"><img src="img/hellohome-2.jpg" alt="Hello Home Dana screenshot" loading="lazy"></a><a href="img/hellohome-3.jpg"><img src="img/hellohome-3.jpg" alt="Hello Home Dana screenshot" loading="lazy"></a><a href="img/hellohome-4.jpg"><img src="img/hellohome-4.jpg" alt="Hello Home Dana screenshot" loading="lazy"></a><a href="img/hellohome-5.jpg"><img src="img/hellohome-5.jpg" alt="Hello Home Dana screenshot" loading="lazy"></a></div>
+  </article>
+  <article class="app">
+    <div class="app-head">
+      <img class="icon" src="img/cityosservice-0icon.png" alt="">
+      <div><h3>CityOS service</h3><div class="links"><a class="store" href="https://play.google.com/store/apps/details?id=com.cityos.cityosservice">Google Play</a></div></div>
+    </div>
+    <p>Staff app for property management companies: receive and process resident requests in real time, assign contractors, track statuses and deadlines, photo reports of completed work, chat with residents.</p>
+    <div class="shots"><a href="img/cityosservice-1.jpg"><img src="img/cityosservice-1.jpg" alt="CityOS service screenshot" loading="lazy"></a><a href="img/cityosservice-2.jpg"><img src="img/cityosservice-2.jpg" alt="CityOS service screenshot" loading="lazy"></a><a href="img/cityosservice-3.jpg"><img src="img/cityosservice-3.jpg" alt="CityOS service screenshot" loading="lazy"></a></div>
+  </article>
+  <article class="app">
+    <div class="app-head">
+      <img class="icon" src="img/nuanugo-0icon.png" alt="">
+      <div><h3>Nuanu Go</h3><div class="links"><a class="store" href="https://apps.apple.com/us/app/id6720755926">App Store</a><a class="store" href="https://play.google.com/store/apps/details?id=com.mcnuanu.nuanu">Google Play</a></div></div>
+    </div>
+    <p>Events app: browse top-rated events and experiences, share them with friends.</p>
+    <div class="shots"><a href="img/nuanugo-1.jpg"><img src="img/nuanugo-1.jpg" alt="Nuanu Go screenshot" loading="lazy"></a><a href="img/nuanugo-2.jpg"><img src="img/nuanugo-2.jpg" alt="Nuanu Go screenshot" loading="lazy"></a><a href="img/nuanugo-3.jpg"><img src="img/nuanugo-3.jpg" alt="Nuanu Go screenshot" loading="lazy"></a><a href="img/nuanugo-4.jpg"><img src="img/nuanugo-4.jpg" alt="Nuanu Go screenshot" loading="lazy"></a></div>
+  </article>
+  <article class="app">
+    <div class="app-head">
+      <img class="icon" src="img/evocontrols-0icon.png" alt="">
+      <div><h3>EVO controls</h3><div class="links"><a class="store" href="https://apps.apple.com/us/app/id1554293423">App Store</a><a class="store" href="https://play.google.com/store/apps/details?id=com.evocontrols">Google Play</a></div></div>
+    </div>
+    <p>Building automation for homes, hotels, offices and production: lighting, climate, curtains, gates, alarms, access control and sensors; device status monitoring and remote control.</p>
+    <div class="shots"><a href="img/evocontrols-1.jpg"><img src="img/evocontrols-1.jpg" alt="EVO controls screenshot" loading="lazy"></a><a href="img/evocontrols-2.jpg"><img src="img/evocontrols-2.jpg" alt="EVO controls screenshot" loading="lazy"></a><a href="img/evocontrols-3.jpg"><img src="img/evocontrols-3.jpg" alt="EVO controls screenshot" loading="lazy"></a><a href="img/evocontrols-4.jpg"><img src="img/evocontrols-4.jpg" alt="EVO controls screenshot" loading="lazy"></a></div>
+  </article>
+</div>
+</section>
+
+<section>
+  <h2>Client projects</h2>
+  <p class="sub">Freelance apps shipped to the stores, 2022 – 2023. 19 contracts and 13 client reviews on FL.ru, all 5.0.</p>
+  
+<div class="apps">
+  <article class="app">
+    <div class="app-head">
+      <img class="icon" src="img/unoscore-0icon.png" alt="">
+      <div><h3>Uno Score Keeper</h3><div class="links"><a class="store" href="https://apps.apple.com/us/app/id1614579095">App Store</a><a class="store" href="https://play.google.com/store/apps/details?id=com.mnarinsky.uno_score_keeper">Google Play</a></div></div>
+    </div>
+    <p>Score keeper for Uno and Uno Flip. I built an experimental feature: on-device card recognition with a Roboflow model.</p>
+    <div class="shots"><a href="img/unoscore-1.jpg"><img src="img/unoscore-1.jpg" alt="Uno Score Keeper screenshot" loading="lazy"></a><a href="img/unoscore-2.jpg"><img src="img/unoscore-2.jpg" alt="Uno Score Keeper screenshot" loading="lazy"></a><a href="img/unoscore-3.jpg"><img src="img/unoscore-3.jpg" alt="Uno Score Keeper screenshot" loading="lazy"></a><a href="img/unoscore-4.jpg"><img src="img/unoscore-4.jpg" alt="Uno Score Keeper screenshot" loading="lazy"></a></div>
+  </article>
+  <article class="app">
+    <div class="app-head">
+      <img class="icon" src="img/mapl-0icon.png" alt="">
+      <div><h3>English with MAPL</h3><div class="links"><a class="store" href="https://apps.apple.com/us/app/id1638561982">App Store</a><a class="store" href="https://apps.rustore.ru/app/by.rit.polyglot">RuStore</a></div></div>
+    </div>
+    <p>Language-learning app built on Dmitry Petrov's method. Flutter + Firebase.</p>
+    <div class="shots"><a href="img/mapl-1.jpg"><img src="img/mapl-1.jpg" alt="English with MAPL screenshot" loading="lazy"></a><a href="img/mapl-2.jpg"><img src="img/mapl-2.jpg" alt="English with MAPL screenshot" loading="lazy"></a><a href="img/mapl-3.jpg"><img src="img/mapl-3.jpg" alt="English with MAPL screenshot" loading="lazy"></a><a href="img/mapl-4.jpg"><img src="img/mapl-4.jpg" alt="English with MAPL screenshot" loading="lazy"></a></div>
+  </article>
+  <article class="app">
+    <div class="app-head">
+      <img class="icon" src="img/polygonfm-0icon.png" alt="">
+      <div><h3>PolygonFM</h3><div class="links"><a class="store" href="https://play.google.com/store/apps/details?id=com.polygongroup.polygonfm">Google Play</a></div></div>
+    </div>
+    <p>Internet-radio app.</p>
+    <div class="shots"><a href="img/polygonfm-1.jpg"><img src="img/polygonfm-1.jpg" alt="PolygonFM screenshot" loading="lazy"></a><a href="img/polygonfm-2.jpg"><img src="img/polygonfm-2.jpg" alt="PolygonFM screenshot" loading="lazy"></a><a href="img/polygonfm-3.jpg"><img src="img/polygonfm-3.jpg" alt="PolygonFM screenshot" loading="lazy"></a><a href="img/polygonfm-4.jpg"><img src="img/polygonfm-4.jpg" alt="PolygonFM screenshot" loading="lazy"></a></div>
+  </article>
+</div>
+</section>
+
+<section>
+  <h2>Not in the stores</h2>
+  <p class="sub">Client projects that were not published or are no longer available.</p>
+  
+<div class="apps">
+  <article class="app">
+    <div class="app-head">
+      <img class="icon" src="img/glowy-0icon.png" alt="">
+      <div><h3>Glowy — Habit Tracker</h3><div class="note">Removed from the stores</div><div class="links"></div></div>
+    </div>
+    <p>Gamified habit tracker: habits and daily tasks with a calendar, daily advice from a coach character, points, levels and coins, a rewards store, achievements and progress analytics. I took over the app from the previous developer: maintained and refactored it, and built subscriptions with RevenueCat.</p>
+    <div class="shots"><a href="img/glowy-1.jpg"><img src="img/glowy-1.jpg" alt="Glowy — Habit Tracker screenshot" loading="lazy"></a><a href="img/glowy-2.jpg"><img src="img/glowy-2.jpg" alt="Glowy — Habit Tracker screenshot" loading="lazy"></a><a href="img/glowy-3.jpg"><img src="img/glowy-3.jpg" alt="Glowy — Habit Tracker screenshot" loading="lazy"></a><a href="img/glowy-4.jpg"><img src="img/glowy-4.jpg" alt="Glowy — Habit Tracker screenshot" loading="lazy"></a><a href="img/glowy-5.jpg"><img src="img/glowy-5.jpg" alt="Glowy — Habit Tracker screenshot" loading="lazy"></a></div>
+  </article>
+  <article class="app">
+    <div class="app-head">
+      <img class="icon" src="img/flora-0icon.png" alt="">
+      <div><h3>Flora</h3><div class="note">Not published</div><div class="links"></div></div>
+    </div>
+    <p>Companion app for Flora, an automatic greenhouse controller: live readings from air, soil moisture, water tank and light sensors; watering zones scheduled by time or water volume; manual control of vents and heating; event log with period filters. I implemented the app in Flutter.</p>
+    <div class="shots"><a href="img/flora-1.jpg"><img src="img/flora-1.jpg" alt="Flora screenshot" loading="lazy"></a><a href="img/flora-2.jpg"><img src="img/flora-2.jpg" alt="Flora screenshot" loading="lazy"></a><a href="img/flora-3.jpg"><img src="img/flora-3.jpg" alt="Flora screenshot" loading="lazy"></a><a href="img/flora-4.jpg"><img src="img/flora-4.jpg" alt="Flora screenshot" loading="lazy"></a></div>
+  </article>
+  <article class="app">
+    <div class="app-head">
+      <div class="icon badge">F</div>
+      <div><h3>FirstELD</h3><div class="note">Not published</div><div class="links"></div></div>
+    </div>
+    <p>Electronic logging device (ELD) app for US truck drivers: hours-of-service clocks (drive, shift, cycle), duty status, daily logbook, inspections. I designed the app and led its development, and worked on the plugin that talks to the ELD device over BLE.</p>
+    <div class="shots"><a href="img/firsteld-1.jpg"><img src="img/firsteld-1.jpg" alt="FirstELD screenshot" loading="lazy"></a><a href="img/firsteld-2.jpg"><img src="img/firsteld-2.jpg" alt="FirstELD screenshot" loading="lazy"></a><a href="img/firsteld-3.jpg"><img src="img/firsteld-3.jpg" alt="FirstELD screenshot" loading="lazy"></a></div>
+  </article>
+</div>
+</section>
+
+<section>
+  <h2>Mobile games — Vizor Games · 2017 – 2021</h2>
+  <p class="sub">Game logic and adaptive UI, rendering optimization (OpenGL ES), SDK integrations, build tooling.</p>
+  
+<div class="apps">
+  <article class="app">
+    <div class="app-head">
+      <img class="icon" src="img/klondike-0icon.png" alt="">
+      <div><h3>Klondike Adventures</h3><div class="note">4.7★ from 131k App Store ratings</div><div class="links"><a class="store" href="https://apps.apple.com/us/app/id1127240206">App Store</a><a class="store" href="https://play.google.com/store/apps/details?id=com.vizorapps.klondike">Google Play</a></div></div>
+    </div>
+    <p>Farm and exploration game set in the Gold Rush era.</p>
+    <div class="shots"><a href="img/klondike-1.jpg"><img src="img/klondike-1.jpg" alt="Klondike Adventures screenshot" loading="lazy"></a><a href="img/klondike-2.jpg"><img src="img/klondike-2.jpg" alt="Klondike Adventures screenshot" loading="lazy"></a><a href="img/klondike-3.jpg"><img src="img/klondike-3.jpg" alt="Klondike Adventures screenshot" loading="lazy"></a></div>
+  </article>
+  <article class="app">
+    <div class="app-head">
+      <img class="icon" src="img/zombie-0icon.png" alt="">
+      <div><h3>Zombie Castaways</h3><div class="note">4.5★ from 29k App Store ratings</div><div class="links"><a class="store" href="https://apps.apple.com/us/app/id1070492711">App Store</a><a class="store" href="https://play.google.com/store/apps/details?id=com.vizorinteractive.zombiesettlersv2">Google Play</a></div></div>
+    </div>
+    <p>Island farm-building game with friendly zombies.</p>
+    <div class="shots"><a href="img/zombie-1.jpg"><img src="img/zombie-1.jpg" alt="Zombie Castaways screenshot" loading="lazy"></a><a href="img/zombie-2.jpg"><img src="img/zombie-2.jpg" alt="Zombie Castaways screenshot" loading="lazy"></a><a href="img/zombie-3.jpg"><img src="img/zombie-3.jpg" alt="Zombie Castaways screenshot" loading="lazy"></a></div>
+  </article>
+</div>
+</section>
+
+<section>
+  <h2>Open source</h2>
+  <ul class="oss">
+<li><a href="https://github.com/alphacep/vosk-flutter"><b>vosk-flutter</b></a> — Offline speech recognition plugin for Flutter.<br><span class="prs">Merged PRs: <a href="https://github.com/alphacep/vosk-flutter/pull/3">Plugin rework</a> · <a href="https://github.com/alphacep/vosk-flutter/pull/8">Linux support (FFI)</a> · <a href="https://github.com/alphacep/vosk-flutter/pull/11">Windows support (FFI)</a></span></li>
+<li><a href="https://github.com/flutter-team-archive/holobooth"><b>Flutter Holobooth</b></a> — Google's Flutter showcase app.<br><span class="prs">Merged PRs: <a href="https://github.com/flutter-team-archive/holobooth/pull/435">Camera selection on the intro page</a></span></li>
+<li><a href="https://github.com/mapeditor/tiled"><b>Tiled</b></a> — Open-source map editor for games (libtiled-java).<br><span class="prs">Merged PRs: <a href="https://github.com/mapeditor/tiled/pull/3004">TMX map reader optimization</a> · <a href="https://github.com/mapeditor/tiled/pull/3117">TilesetCache interface</a> · <a href="https://github.com/mapeditor/tiled/pull/2006">Tile read fix</a></span></li>
+  </ul>
+</section>
+</div>
+</body>
+</html>
